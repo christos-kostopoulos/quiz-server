@@ -34,7 +34,7 @@ class QuestionModelApi(ModelRestApi):
    resource_name = "questions"
    datamodel = SQLAInterface(Question)
    allow_browser_login = True
-   list_columns = ["id", "questionTitle", "explanation", "quiz.id"]
+   list_columns = ["id", "questionTitle", "explanation", "quiz.id", "resource"]
    search_filters = {"questionTitle": [Questionfilter]}
    openapi_spec_methods = {
         "get_list": {

@@ -36,7 +36,7 @@ class ChoiceModelView(ModelView):
 
 class QuestionModelView(ModelView): 
     datamodel = SQLAInterface(Question)
-    list_columns = ["id", "latex_field"]
+    list_columns = ["id", "latex_field", 'explanation', 'resource']
     related_views = [ChoiceModelView]
     
     show_template = 'appbuilder/general/model/show_cascade.html'
