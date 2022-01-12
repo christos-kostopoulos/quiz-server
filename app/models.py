@@ -32,6 +32,7 @@ class Question(Model):
   quiz_id = Column(Integer, ForeignKey("quiz.id"), nullable=False)
   quiz = relationship("Quiz")
   explanation = Column(Text)
+  resource =  name = Column(String(200))
   # @renders('questionTitle')
   # def latex_field(self):
   #   # will render this columns as bold on ListWidget
